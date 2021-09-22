@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F0E86B5226FAB78200E8A021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E86B5126FAB78200E8A021 /* AppDelegate.swift */; };
 		F0E86B5426FAB78200E8A021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E86B5326FAB78200E8A021 /* SceneDelegate.swift */; };
-		F0E86B5626FAB78200E8A021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E86B5526FAB78200E8A021 /* ViewController.swift */; };
+		F0E86B5626FAB78200E8A021 /* ContactsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E86B5526FAB78200E8A021 /* ContactsTVC.swift */; };
 		F0E86B5926FAB78200E8A021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E86B5726FAB78200E8A021 /* Main.storyboard */; };
 		F0E86B5B26FAB78700E8A021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E86B5A26FAB78700E8A021 /* Assets.xcassets */; };
 		F0E86B5E26FAB78700E8A021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E86B5C26FAB78700E8A021 /* LaunchScreen.storyboard */; };
@@ -19,11 +19,12 @@
 		F0E86B4E26FAB78200E8A021 /* sqlite_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sqlite_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E86B5126FAB78200E8A021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0E86B5326FAB78200E8A021 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0E86B5526FAB78200E8A021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0E86B5526FAB78200E8A021 /* ContactsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTVC.swift; sourceTree = "<group>"; };
 		F0E86B5826FAB78200E8A021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0E86B5A26FAB78700E8A021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0E86B5D26FAB78700E8A021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0E86B5F26FAB78700E8A021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E86B6726FAB7A200E8A021 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 			children = (
 				F0E86B5026FAB78200E8A021 /* sqlite_demo */,
 				F0E86B4F26FAB78200E8A021 /* Products */,
+				F0E86B6626FAB7A100E8A021 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +60,21 @@
 			children = (
 				F0E86B5126FAB78200E8A021 /* AppDelegate.swift */,
 				F0E86B5326FAB78200E8A021 /* SceneDelegate.swift */,
-				F0E86B5526FAB78200E8A021 /* ViewController.swift */,
+				F0E86B5526FAB78200E8A021 /* ContactsTVC.swift */,
 				F0E86B5726FAB78200E8A021 /* Main.storyboard */,
 				F0E86B5A26FAB78700E8A021 /* Assets.xcassets */,
 				F0E86B5C26FAB78700E8A021 /* LaunchScreen.storyboard */,
 				F0E86B5F26FAB78700E8A021 /* Info.plist */,
 			);
 			path = sqlite_demo;
+			sourceTree = "<group>";
+		};
+		F0E86B6626FAB7A100E8A021 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0E86B6726FAB7A200E8A021 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0E86B5626FAB78200E8A021 /* ViewController.swift in Sources */,
+				F0E86B5626FAB78200E8A021 /* ContactsTVC.swift in Sources */,
 				F0E86B5226FAB78200E8A021 /* AppDelegate.swift in Sources */,
 				F0E86B5426FAB78200E8A021 /* SceneDelegate.swift in Sources */,
 			);
